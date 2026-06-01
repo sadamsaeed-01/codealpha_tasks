@@ -62,3 +62,55 @@ body{
     color: rgb(235, 133, 205);
     font-weight: bold;
 }
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+    .main_body{
+        width: 85%;
+        padding: 40px 20px;
+    }
+
+    .input_tag{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input_tag #date{
+        width: 90%;
+        margin: 8px 0;
+    }
+
+    .input_tag button{
+        width: 90%;
+        margin: 8px 0;
+    }
+
+    #result{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .main_body{
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    .body_box h2{
+        font-size: 24px;
+    }
+
+    .input_tag #date,
+    .input_tag button{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #result{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
